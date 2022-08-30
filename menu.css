@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+body{
+    margin: 0;
+}
+
+h4, h5{
+    font-family: 'Shojumaru', cursive;
+}
+
+h3{
+    color:grey;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1em;
+    margin: 0 0.5em 0 0.5em;
+    margin-top: 0.7rem;
+    font-family: 'Shojumaru', cursive;
+}
+
+.drinks{
+    color:grey;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1em;
+    margin: 0 0.5em 0 0.5em;
+    margin-top: 0.7rem;
+    font-family: 'Shojumaru', cursive;
+}
+
+.subdrinks{
+    text-align: center;
+    color: grey;
+}
+
+.title{
+    text-align: center;
+    color: red;
+    font-family: 'Shojumaru', cursive;
+}
+
+.popup{
+    width: min(300px, 100%);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    justify-content: center;
+    padding: 0 30px 30px;
+    font-family: 'Shojumaru', cursive;
+    background-color: black;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: red;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+    display: inline-block;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: red;
+    color: white;
+}
+
+#ramen img{
+    width: min(8rem, 100%);
+}
+
+#ramen h3{
+    color: red;
+    margin: 1em;
+    text-shadow: 2px 3px 3px orange;
+}
+
+#ramen div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#ramen h6{
+    margin: 0.5rem;
+}
+
+#ramen{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#donburi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#donburi img{
+    width: min(8rem, 100%);
+}
+
+#donburi div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#takoyaki{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#takoyaki img{
+    width: min(8rem, 100%);
+}
+
+#takoyaki div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#gyoza{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#gyoza img{
+    width: min(8rem, 100%);
+}
+
+#gyoza div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#sushi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#sushi img{
+    width: min(8rem, 100%);
+}
+
+#sushi div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#sashimi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#sashimi img{
+    width: min(8rem, 100%);
+}
+
+#sashimi div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#rolls{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#rolls img{
+    width: min(8rem, 100%);
+}
+
+#rolls div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#specialrolls{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#specialrolls img{
+    width: min(8rem, 100%);
+}
+
+#specialrolls div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#grill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#grill img{
+    width: min(8rem, 100%);
+}
+
+#grill div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#tempura{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#tempura img{
+    width: min(8rem, 100%);
+}
+
+#tempura div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#others{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#others img{
+    width: min(8rem, 100%);
+}
+
+#others div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#desserts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#desserts img{
+    width: min(8rem, 100%);
+}
+
+#desserts div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#bubbleteas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#bubbleteas img{
+    width: min(8rem, 100%);
+}
+
+#bubbleteas div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#dailyspecials{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#dailyspecials img{
+    width: min(8rem, 100%);
+}
+
+#dailyspecials div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#draftbeers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#draftbeers img{
+    width: min(8rem, 100%);
+}
+
+#draftbeers div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#kinjooriginal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#kinjooriginal img{
+    width: min(8rem, 100%);
+}
+
+#kinjooriginal div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#canbeers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#canbeers img{
+    width: min(8rem, 100%);
+}
+
+#canbeers div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#draftsake{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#draftsake img{
+    width: min(8rem, 100%);
+}
+
+#draftsake div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#specialsake{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#specialsake img{
+    width: min(8rem, 100%);
+}
+
+#specialsake div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#whitewine{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#whitewine img{
+    width: min(8rem, 100%);
+}
+
+#whitewine div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#rose{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#rose img{
+    width: min(8rem, 100%);
+}
+
+#rose div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#redwine{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#redwine img{
+    width: min(8rem, 100%);
+}
+
+#redwine div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#sparkingwine{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#sparkingwine img{
+    width: min(8rem, 100%);
+}
+
+#sparkingwine div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#cocktails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#cocktails img{
+    width: min(8rem, 100%);
+}
+
+#cocktails div{
+    margin: 1em;
+    border: 0.2rem solid black;
+    text-align: center;
+    border-radius: 7px;
+}
+
+
+@media screen and (min-width: 992px) {
+    #ramen{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #sushi{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #sashimi{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #rolls{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #specialrolls{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #grill{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #tempura{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #others{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #desserts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #draftbeers{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #canbeers{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #redwine{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
