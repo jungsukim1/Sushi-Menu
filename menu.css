@@ -7,6 +7,10 @@ h4, h5{
     font-family: 'Shojumaru', cursive;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h3{
     color:grey;
     border-bottom: 2px solid #ccc;
@@ -36,10 +40,20 @@ h3{
     font-family: 'Shojumaru', cursive;
 }
 
+.popupcontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+
 .popup{
     width: min(300px, 100%);
     border-radius: 6px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
@@ -50,12 +64,17 @@ h3{
     color: white;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+    z-index: 100;
 }
 
 .open-popup{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
+}
+
+.turnoff{
+    visibility: visible;
 }
 
 .popup button{
@@ -73,14 +92,19 @@ h3{
 
 .topnav {
     background-color: #333;
-    overflow: hidden;
     text-align: center;
     justify-content: space-around;
-    display: inline-block;
     margin: 0 auto;
-    position: sticky;
     top: 0;
+    display: none;
+    align-items: flex-start;
     z-index: 100;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topnavsticky{
+    position: sticky;
 }
 
 .topnav a {
@@ -90,6 +114,7 @@ h3{
     padding: 1em;
     text-decoration: none;
     font-size: 17px;
+    padding: 0.5rem 1rem;
 }
 
 .topnav a:hover {
@@ -97,15 +122,40 @@ h3{
     color: white;
 }
 
+.topnav.active{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 0.75rem; 
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    border-radius: 15px;
+}
+
 #ramen img{
     width: min(8rem, 100%);
 }
 
-#ramen h3{
-    color: red;
-    margin: 1em;
-    text-shadow: 2px 3px 3px orange;
-}
 
 #ramen div{
     margin: 1em;
@@ -540,7 +590,7 @@ h3{
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1060px) {
     #ramen{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -588,4 +638,21 @@ h3{
     #redwine{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .topnav{
+        display: flex;
+        position: sticky;
+        flex-direction: row;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+    }
+
+    .toggle-button{
+        display: none;
+    }
+
+
 }

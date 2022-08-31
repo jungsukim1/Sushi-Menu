@@ -14,50 +14,59 @@
         <h2>KINJO MENU</h2>
         <h3>AVAILABLE AT KINJO DALHOUSIE & NORTH HILL</h3>
     </div>
-    <div class="popup" id="popup">
-        <h3>Do you have any allergies/dietary restrictions?</h3>
-        <div class="allergies">
-            <input type="checkbox" id="none" name="no-allergy">
-            <lable for="no-allergy">No Allergy</lable><br><br>
-            <input type="checkbox" id="gluten" name="gluten">
-            <lable for="gluten">Gluten Allergy</lable><br><br>
-            <input type="checkbox" id="soy" name="soy">
-            <lable for="soy">Soy Allergy</lable><br><br>
-            <input type="checkbox" id="egg" name="egg">
-            <lable for="egg">Egg Allergy</lable><br><br>
-            <input type="checkbox" id="dairy" name="dairy">
-            <lable for="dairy">Dairy Allergy</lable><br><br>
-            <input type="checkbox" id="sesame" name="sesame">
-            <lable for="sesame">Sesame Allergy</lable><br><br>
-            <input type="checkbox" id="shellfish" name="shellfish">
-            <lable for="shellfish">Shellfish Allergy</lable><br><br>
-            <input type="checkbox" id="vegan" name="vegan">
-            <lable for="vegan">Vegan</lable><br><br>
-            <input type="checkbox" id="vegetarian" name="vegetarian">
-            <lable for="vegetarian">Vegetarian</lable><br><br>
-            <input type="checkbox" id="greenonion" name="greenonion">
-            <lable for="greenonion">Green Onion Allergy</lable><br><br>
-            <input type="checkbox" id="msg" name="msg">
-            <lable for="msg">MSG Allergy</lable><br><br>
-            <input type="checkbox" id="avocado" name="avocado">
-            <lable for="avocado">Avocado Allergy</lable><br><br>
-            <button onclick="closePopup()">Submit</button>
+    <div class="popupcontainer" id="popupcontainer">
+        <div class="popup" id="popup">
+            <h3>Do you have any allergies/dietary restrictions?</h3>
+            <div class="allergies">
+                <input type="checkbox" id="none" name="no-allergy">
+                <lable for="no-allergy">No</lable><br><br>
+                <input type="checkbox" id="gluten" name="gluten">
+                <lable for="gluten">Gluten</lable><br><br>
+                <input type="checkbox" id="soy" name="soy">
+                <lable for="soy">Soy</lable><br><br>
+                <input type="checkbox" id="egg" name="egg">
+                <lable for="egg">Egg</lable><br><br>
+                <input type="checkbox" id="dairy" name="dairy">
+                <lable for="dairy">Dairy</lable><br><br>
+                <input type="checkbox" id="sesame" name="sesame">
+                <lable for="sesame">Sesame</lable><br><br>
+                <input type="checkbox" id="shellfish" name="shellfish">
+                <lable for="shellfish">Shellfish</lable><br><br>
+                <input type="checkbox" id="vegan" name="vegan">
+                <lable for="vegan">Vegan</lable><br><br>
+                <input type="checkbox" id="vegetarian" name="vegetarian">
+                <lable for="vegetarian">Vegetarian</lable><br><br>
+                <input type="checkbox" id="greenonion" name="greenonion">
+                <lable for="greenonion">Green Onion</lable><br><br>
+                <input type="checkbox" id="msg" name="msg">
+                <lable for="msg">MSG</lable><br><br>
+                <input type="checkbox" id="avocado" name="avocado">
+                <lable for="avocado">Avocado</lable><br><br>
+                <button onclick="closePopup()">Submit</button>
+            </div>
         </div>
     </div>
-    <div class="topnav">
-        <a href="#ramensection">Ramen</a>
-        <a href="#donburisection">Donburi</a>
-        <a href="#takoyakisection">Takoyaki</a>
-        <a href="#gyozasection">Gyoza</a>
-        <a href="#sushisection">Sushi</a>
-        <a href="#sashimisection">Sashimi</a>
-        <a href="#rollssection">Rolls</a>
-        <a href="#specialrollssection">Special Rolls</a>
-        <a href="#grillssection">Grill</a>
-        <a href="#tempurasection">Tempura</a>
-        <a href="#otherssection">Others</a>
-        <a href="#dessertssection">Desserts</a>
-        <a href="#drinksection">Drinks</a>
+    <div class="navbar" id="navbar">
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div id="topnav" class="topnav">
+            <a href="#ramensection">Ramen</a>
+            <a href="#donburisection">Donburi</a>
+            <a href="#takoyakisection">Takoyaki</a>
+            <a href="#gyozasection">Gyoza</a>
+            <a href="#sushisection">Sushi</a>
+            <a href="#sashimisection">Sashimi</a>
+            <a href="#rollssection">Rolls</a>
+            <a href="#specialrollssection">Special Rolls</a>
+            <a href="#grillssection">Grill</a>
+            <a href="#tempurasection">Tempura</a>
+            <a href="#otherssection">Others</a>
+            <a href="#dessertssection">Desserts</a>
+            <a href="#drinksection">Drinks</a>
+        </div>
     </div>
     <h3 id="ramensection">Ramen</h3>
     <div id="ramen">
@@ -494,7 +503,7 @@
     <div id="grill">
         <div id="sauteedlongbean">
             <h4>Sautéed Long Bean</h4>
-            <img src="https://images.myhelcim.com/img/1/174536/smHelcimCommerce-product1008707-1651095774350.jpg">
+            <img src="https://images.myhelcim.com/img/1/80686/smHelcimCommerce-product368017-1589927956900.jpg">
             <h4>$6.09</h4>
         </div>
         <div id="teriyakichicken">
